@@ -31,7 +31,7 @@ Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](htt
 
 ## 魔改内容
 
-- 调整文章页面为三栏显示（代码来自[ShadowySpirits](https://github.com/ShadowySpirits/hugo-theme-stack)）https://github.com/ShadowySpirits/hugo-theme-stack)
+- 调整文章页面为三栏显示（代码来自[ShadowySpirits](https://github.com/ShadowySpirits/hugo-theme-stack)）
 - 文章按年份分类
 - 增加文章字数统计与站点总字数、总篇数显示
 - 修改全站字体为思源宋体
