@@ -1,0 +1,1 @@
+{{ $url := ref . .Params }}{{ if .Site.Params.TrimTrailingSlash }}{{ $url = $url | replaceRE "/$" "" }}{{ end }}{{ $url }}

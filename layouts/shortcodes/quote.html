@@ -1,0 +1,10 @@
+<!-- 文件位置：~/layouts/shortcodes/quote.html -->
+
+<blockquote class="quote{{ range .Params }} {{ . }}{{ end }}">
+    {{- $content := .Inner | markdownify -}}
+    {{- if not (strings.HasPrefix $content "<p>") }}
+        {{ printf `<p>%s</p>` $content | safeHTML }}
+    {{- else }}
+        {{- $content }}
+    {{- end -}}
+</blockquote> 

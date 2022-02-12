@@ -1,0 +1,27 @@
+{{- $query := first 1 (where .Site.Pages "Layout" "==" "archives") -}}
+{{- if $query -}}
+    {{- $archivesPage := index $query 0 -}}
+    <section class="widget categories">
+        <div class="widget-icon">
+            {{ partial "helper/icon" "infinity" }}  
+        </div> 
+        <h2 class="widget-title section-title">Categories</h2>
+    <div class="widget-categories--list">
+<div class="widget">
+    <h3 class="widget-title"> {{ T "widget_categories" }}</h3>
+    <div class="widget-body">
+        <div class="category-list">
+            {{- range $name, $taxonomy := $.Site.Taxonomies.categories }}
+            {{- with $.Site.GetPage (printf "/categories/%s" $name) }}
+            <div class="category-list-item"><a href="{{ .Permalink }}" class="category-list-link">{{ $name }}<span class="category-list-count">{{ $taxonomy.Count}}</a>
+            </span></div>
+            {{- end }}
+            {{- end }}
+        </div>
+    </div>
+</div>
+    </div>
+    </section>
+{{- else -}}
+    {{- warnf "Archives page not found. Create a page with layout: archives." -}}
+{{- end -}}
