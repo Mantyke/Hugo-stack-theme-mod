@@ -178,3 +178,9 @@ style:
 [Hugo | 在文章中插入轮播图片](https://mantyke.icu/2021/cf2cf0fb/)
 
 [Hugo | 第三篇 Stack 主题装修记录，堂堂再临！](https://mantyke.icu/2022/stack-theme-furnish03/)
+
+<br>
+
+如果您喜欢这个魔改版主题，欢迎到我的[个人博客](https://mantyke.icu/)中留言告诉我，我会很开心的！
+
+<br>
