@@ -181,6 +181,6 @@ style:
 
 <br>
 
-如果您喜欢这个魔改版主题，欢迎到我的[个人博客](https://mantyke.icu/2022/stack-theme-mod/)中留言告诉我，我会很开心的！
+如果您喜欢或使用这个魔改版主题成功搭建了自己的个人博客，欢迎到我的[个人博客](https://mantyke.icu/2022/stack-theme-mod/)中留言告诉我，我会很开心的！
 
 <br>
