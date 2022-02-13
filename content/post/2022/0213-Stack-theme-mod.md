@@ -113,10 +113,6 @@ document.getElementById('days').innerHTML = number_of_days;
 
 ## 其他常见修改
 
-### 设置浏览器图标
-
-位置：`/static/img`
-
 ### 设置博客头像
 
 位置：`/assets/img`，请将头像命名为`avatar.png`，替换原头像文件
@@ -174,19 +170,15 @@ style:
 ---
 ```
 
-
-
 ### 配置各类图标
 
 图标放在：`/assets/icons`，svg格式，配置方式参考[文档](https://docs.stack.jimmycai.com/zh/configuration/custom-menu)
-
-
 
 <br>
 
 ### 其他参考
 
-其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，仅供参考：
+其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，参考时务必注意：
 
 [Hugo | 一起动手搭建个人博客吧](https://mantyke.icu/2021/hugo-build-blog/)
 

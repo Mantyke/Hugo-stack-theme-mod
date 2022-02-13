@@ -96,9 +96,74 @@ document.getElementById('days').innerHTML = number_of_days;
 
 <br>
 
+## 其他常见修改
+
+### 设置博客头像
+
+位置：`/assets/img`，请将头像命名为`avatar.png`，替换原头像文件
+
+### 删除博客头像
+
+位置：`/layouts/partials/sidebar/left.html`，注释或删去以下部分：
+
+```
+        {{ with .Site.Params.sidebar.avatar }}
+            {{ if (default true .enabled) }}
+            <figure class="site-avatar">
+                <a href="{{ .Site.BaseURL | relLangURL }}">
+                {{ if not .local }}
+                    <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                {{ else }}
+                    {{ $avatar := resources.Get (.src) }}
+                    
+                    {{ if $avatar }}
+                        {{ $avatarResized := $avatar.Resize "300x" }}
+                        <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
+                            height="{{ $avatarResized.Height }}" class="site-logo" loading="lazy" alt="Avatar">
+                    {{ else }}
+                        {{ errorf "Failed loading avatar from %q" . }}
+                    {{ end }}
+                {{ end }}
+                </a>
+                {{ with $.Site.Params.sidebar.emoji }}
+                    <span class="emoji">{{ . }}</span>
+                {{ end }}
+            </figure>
+            {{ end }}
+        {{ end }}
+```
+
+### 修改博客背景颜色
+
+位置：`assets\scss\variables.scss`
+
+```
+--body-background: #f6f6f6;
+```
+
+### 指定首页分类标签颜色
+
+位置：`content\categories`，创建分类同名文件夹后，在文件夹内创建`_index.md`文件，写入frontmatter
+
+```
+title: "做猫贵在折腾" //分类名称
+description: "简介 Blablabla" //不需要可以删了
+image: "ffxiv_20210830_230509_817.png" //分类题图，不需要也可以删了
+style:
+    background: "#80aba9" //分类标签底色
+    color: "#fff"
+---
+```
+
+### 配置各类图标
+
+图标放在：`/assets/icons`，svg格式，配置方式参考[文档](https://docs.stack.jimmycai.com/zh/configuration/custom-menu)
+
+<br>
+
 ### 其他参考
 
-其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，仅供参考：
+其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，参考时务必注意：
 
 [Hugo | 一起动手搭建个人博客吧](https://mantyke.icu/2021/hugo-build-blog/)
 
