@@ -1,5 +1,5 @@
 ---
-title: "Hugo | Hugo-stack-theme魔改主题开源"
+title: "Hugo | Hugo-stack-theme主题魔改版"
 date: 2022-02-13T03:02:52+08:00
 lastmod: 2022-02-13T03:02:52+08:00
 description: 问的人比较多，我又比较懒，干脆做了一套样板间。
@@ -11,7 +11,7 @@ image:
 slug: stack-theme-mod
 
 ---
-Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](https://github.com/Mantyke/stack-theme-mod)
+Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](https://github.com/Mantyke/Hugo-stack-theme-mod)
 
 本主题由[CaiJimmy](https://github.com/CaiJimmy)制作并[发布](https://github.com/CaiJimmy/hugo-theme-stack)，这个仓库是由[Mantyke](https://mantyke.icu/)修改的魔改版本
 
@@ -31,7 +31,7 @@ Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](htt
 
 ## 魔改内容
 
-- 调整文章页面为三栏显示（代码来自[ShadowySpirits](https://github.com/ShadowySpirits/hugo-theme-stack)）https://github.com/ShadowySpirits/hugo-theme-stack)
+- 调整文章页面为三栏显示（代码来自[ShadowySpirits](https://github.com/ShadowySpirits/hugo-theme-stack)）
 - 文章按年份分类
 - 增加文章字数统计与站点总字数、总篇数显示
 - 修改全站字体为思源宋体
@@ -53,7 +53,7 @@ Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](htt
 三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。
 {< /quote >}}
 ```
-
+{{< quote >}} 三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。 {{< /quote >}} 
 <br>
 
 ### 友情链接使用方式
